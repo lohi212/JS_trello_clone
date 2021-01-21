@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head lang="en">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-         <link rel="stylesheet" href="style.css" />
         <title>trello_demo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />        
     </head>
     <body>
-        <!--<div id ="col" class="column" style=" display: flex; flex-wrap: wrap; justify-content:space-between";>
-                <input type="button" id="myButton" class="button" 
-                onclick="createcard()" value="Add a card">
-                <div id="container" 
-                    class="card" 
-                    style=" display: flex; flex-wrap: wrap; justify-content:space-between;">
+        <!-- <div class="container">
+            <div class="column" id="col1"  ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="card" id="cd1" draggable="true" ondragstart="drag(event)">
+                    <p>demo cards</p>
                 </div>
-            -->
-       
+            </div>
+            <div class="column" id="col2"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="column" id="col3"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        </div> -->
 
+        <div class="container" id="container">
+            <div class="column" id="column1"></div>
+            <div class="column" id="column2"></div>
+            <div class="column" id="column3"></div>
+        </div>
         <script type="text/javascript" ></script>
         <script src="app.js"></script>
     </body>

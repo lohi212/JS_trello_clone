@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
-app.use('/', express.static('public'));
+app.use(express.static('public/'));
+
 const tasks = [{
-    name: 'Demo',
+    name: 'Task 1',
     status: 'TODO',
 },
 {
@@ -16,10 +17,12 @@ const tasks = [{
 ];
 app.get('/test-url', (req, res) => {
     res.json({ tasks });
-    
-    //tasks.forEach(x => console.log(x))
 });
 
+app.post('/test-post', (req, res) => {
+    console.log(req.body);
+  });
+  
 app.listen(1234, () => {
     console.log('server started on PORT:', 1234);
 })
