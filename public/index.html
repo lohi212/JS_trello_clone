@@ -19,9 +19,26 @@
         </div> -->
 
         <div class="container" id="container">
-            <div class="column" id="column1"></div>
-            <div class="column" id="column2"></div>
-            <div class="column" id="column3"></div>
+            <div class="column" id="column1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!-- <button type="button" onclick="createCard();">Add card</button> -->
+                <div class = "head">TO DO</div>
+                <input type="text" id="ip_data">
+                <button type="button" onclick="createCard('#column1');">Add card</button>
+            </div>
+            <div class="column" id="column2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!-- <button type="button" onclick="createCard();">Add card</button> -->
+                <div class = "head">IN_PROGRESS</div>
+                <input type="text" id="ip_data">
+                <button type="button" onclick="createCard('#column2');">Add card</button>
+            </div>
+            <div class="column" id="column3" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <div class = "head">DONE</div>
+                <input type="text" id="ip_data">
+                <button type="button" onclick="createCard('#column3');">Add card</button>
+            
+            </div>
+            <input type="text" id="ip_col_data">
+            <button type="button" onclick="createColumn();">Add Column</button>
         </div>
         <script type="text/javascript" ></script>
         <script src="app.js"></script>
