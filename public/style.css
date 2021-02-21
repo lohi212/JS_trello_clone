@@ -1,20 +1,20 @@
+body {
+    background-color: #008B8B;
+}
 .container {
     display: flex;
     flex-direction: row;
     width: 100%;
-    overflow: auto;
     /* border: 1px solid black; */
-    height: 80vh;
 }
 
 .column {
     
-    background-color: rgb(235, 236, 240);;
+    background-color:#F5F5DC;
     border-radius: 3px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    max-height: 100%;
     position: relative;
     white-space: normal;
     width:200px;
@@ -55,6 +55,9 @@ button {
 
 input {
     margin: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0px; 
+}
 
+.col-input {
+    height: 30px;
 }
